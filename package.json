@@ -1,0 +1,30 @@
+{
+  "name": "hand2",
+  "version": "1.0.0",
+  "description": "MIM Dev Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": " concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahraZd/HAND2.git"
+  },
+  "author": "2MIM_DEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahraZd/HAND2/issues"
+  },
+  "homepage": "https://github.com/shahraZd/HAND2#readme",
+  "dependencies": {
+    "antd": "^3.26.7",
+    "axios": "^0.19.1",
+    "concurrently": "^5.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7",
+    "react-router-dom": "^5.1.2"
+  }
+}
