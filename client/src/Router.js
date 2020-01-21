@@ -5,6 +5,10 @@ import Navbar from "./components/Layout/Navbar"
 import Signin from "./components/Auth/SignIn"
 import Signup from "./components/Auth/SignUp"
 import Admin from "./components/Layout/Main/Admin"
+import Players from "./components/Layout/Main/Players"
+import Profile from "./components/Layout/Main/Players/Profile"
+
+
 
 
 
@@ -16,21 +20,26 @@ function Router() {
 
     <BrowserRouter>
       <Layout>
-        <Switch>
-          <Route path="/admin" component={Admin} />
-          <Navbar />
-          <Content style={{ padding: '0 50px', marginTop: 64 }}>
-
-            <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
 
 
+
+        <Navbar />
+        <Content style={{ padding: '0 50px', marginTop: 64 }}>
+
+          <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+            <Switch>
+              <Route path="/signin" component={Signin} />
+              <Route path="/admin" component={Admin} />
+              <Route path="/players/profile" component={Profile} />
+
+              <Route exact path="/players" component={Players} />
               {/* <Route path="/signin" component={Signin} />
               <Route path="/signup" component={Signup} /> */}
+            </Switch>
 
-            </div>
+          </div>
 
-          </Content>
-        </Switch>
+        </Content>
 
         <Footer style={{ textAlign: 'center' }}>HAND2 ©2020 Created 2MIM_DEV </Footer>
       </Layout>
