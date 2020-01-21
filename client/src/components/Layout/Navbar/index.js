@@ -1,5 +1,6 @@
 import React from 'react'
-import { Layout, Menu } from "antd"
+import { Layout, Menu, Button } from "antd"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const { Header } = Layout;
@@ -30,9 +31,14 @@ const Navbar = () => {
                     <Menu.Item key="1">Players</Menu.Item>
                     <Menu.Item key="2">Clubs</Menu.Item>
                     <Menu.Item key="3">Matchs</Menu.Item>
+
+                    {/* <Link to="/signin"><Button type="primary">LogIn</Button> </Link>
+                    <Link to="/signup"> <Button ghost >SignUp</Button></Link> */}
                 </Menu>
+
+
             </Header>
-        </div>
+        </div >
     )
 }
 
