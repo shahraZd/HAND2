@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
-import Router from './Router';
+import Routers from './Routers';
 
 
-ReactDOM.render(<Router />, document.getElementById('root'));
+ReactDOM.render(<Routers />, document.getElementById('root'));
 
